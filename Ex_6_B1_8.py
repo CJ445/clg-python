@@ -13,6 +13,6 @@ for i in range(t):
     if "not" in s and "bad" in s:
         ind = s.find("not")
         s = s.replace("not","good")
-        print(s[:ind+4]+"!") # prints till the last i.e. 4th letter of the word 'good'. Since .find('not') return index position of 'n'.
+        print(s[:ind+len("good")]+"!") # prints till the last i.e. 4th letter of the word 'good'. Since .find('not') return index position of 'n'.
     else:
         print(s)
